@@ -82,6 +82,10 @@ li {
 
 .menu-list {
   display: none;
+  background-color: #fff;
+  padding: 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   flex-direction: column;
   text-align: right;
 }
