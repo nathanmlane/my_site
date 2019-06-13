@@ -63,11 +63,12 @@ li {
   display: flex;
   flex-direction: column;
   text-align: right;
-  margin-top: 1.25rem;
   cursor: pointer;
 }
 
 #menu-trigger {
+  margin-top: .75rem;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -75,7 +76,7 @@ li {
   display: none;
   flex-direction: column;
   text-align: right;
-  margin-top: 0rem;
+  margin-top: .75rem;
   cursor: pointer;
 }
 
@@ -89,9 +90,24 @@ li {
   margin: .5rem 0;
 }
 
-.menu-item:hover {
-  border-right: 5px solid red;
-  padding-right: 1rem;
+#skills:hover {
+  color: #43BA87;
+}
+
+#work:hover {
+  color: #CCCCCB;
+}
+
+#resume:hover {
+  color: #80489C;
+}
+
+#school:hover {
+  color: #2966B1;
+}
+
+#contact:hover {
+  color: #EF4343;
 }
 
 .container {
@@ -137,7 +153,6 @@ li {
   max-width: 25px;
   max-height: 25px;
   margin-right: 1rem;
-  border-radius: 50px;
 }
 
 /* =================================
