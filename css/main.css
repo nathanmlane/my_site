@@ -9,7 +9,7 @@ body {
 }
 
 p {
-  color: #000;
+  font-size: .9rem;
   margin-block-start: 0rem;
 }
 
@@ -20,11 +20,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin-block-start: 0rem;
   margin-block-end: 0rem;
-  color: #000;
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -32,38 +30,114 @@ li {
   font-family: 'Roboto Mono', sans-serif;
   list-style: none;
   list-style-position: inside;
-  color: #000;
 }
 
 /* =================================
   Layout
 ==================================== */
-
 .wrapper {
   display: flex;
   flex-direction: column;
   max-width: 100vw;
   max-height: 100vh;
-  margin: 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
 
 .nav {
   display: flex;
-  flex: 1;
+  z-index: 2;
+  height: auto;
+  background-color: #fff;
+  margin: 0 -1rem;
+  padding: 0 1rem;
+  min-height: 50px;
+  max-height: 75px;
   justify-content: space-between;
 }
 
 .logo {
-
+  margin-top: .5rem;
 }
 
 .menu {
   display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+#menu-trigger {
+  cursor: pointer;
+}
+
+#menu-close {
+  display: none;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 0rem;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: none;
+  flex-direction: column;
+  text-align: right;
+}
+
+.menu-item {
+  margin: .5rem 0;
+}
+
+.menu-item:hover {
+  border-right: 5px solid red;
+  padding-right: 1rem;
 }
 
 .container {
   display: flex;
-  flex: 4;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 2rem - 75px);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  max-width: 800px;
+}
+
+.contact-box {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #fff;
+  background-color: #EF4343;
+}
+
+.txt-box {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  margin-left: 2rem;
+}
+
+.sl-contact {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  font-size: .8rem;
+}
+
+.bullet-icon {
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 1rem;
+  border-radius: 50px;
 }
 
 /* =================================
@@ -168,4 +242,62 @@ li {
 .grey-bg:hover {
   color: #CCCCCB !important;
   background-color: #fff;
+}
+
+#sun-moon {
+  position: fixed;
+  z-index: 1;
+  bottom: 3rem;
+  right: 3.2rem;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  background: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color .5s ease;
+}
+
+#sun-moon:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  background: #23232A;
+  transition: border-radius .5s ease, background-color .5s ease, width .5s ease, transform .5s ease;
+}
+
+#sun-moon:after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #23232A;
+  box-shadow: 0 0 0 0 #23232A, 0 0 0 0 #23232A, 0 0 0 2px #fff, 0 0 0 15px #23232A;
+  box-sizing: border-box;
+  transition: border-color .5s ease, box-shadow .5s ease;
+}
+
+body.night #sun-moon {
+  background-color: #fff;
+}
+
+body.night #sun-moon:before {
+  background: #23232A;
+  border-radius: 50%;
+  width: 100%;
+  transform: translate(-5%, -35%) rotate(-25deg);
+}
+
+body.night #sun-moon:after {
+  content: "";
+  color: #fff;
+  border: 2px solid #23232A;
+  box-shadow: 0 0 0 0 #23232A, 0 0 0 0 #23232A, 0 0 0 2px #23232A, 0 0 0 15px #fff;
 }
