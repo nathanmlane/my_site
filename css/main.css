@@ -1,0 +1,171 @@
+/* ----- Global Styling ----- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  color: #000;
+  margin-block-start: 0rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  font-family: 'Roboto Mono', sans-serif;
+  list-style: none;
+  list-style-position: inside;
+  color: #000;
+}
+
+/* =================================
+  Layout
+==================================== */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.logo {
+
+}
+
+.menu {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex: 4;
+}
+
+/* =================================
+  Colors
+==================================== */
+.red {
+  color: #EF4343;
+}
+
+.red-hover:hover {
+  background-color: #EF4343;
+  color: white;
+}
+
+.red-bg {
+  border-radius: 2px;
+  background-color: #EF4343;
+  color: white !important;
+}
+
+.red-bg:hover {
+  color: #EF4343 !important;
+  background-color: #fff;
+}
+
+.green {
+  color: #43BA87;
+}
+
+.green-hover:hover {
+  background-color: #43ba87;
+  color: white;
+}
+
+.green-bg {
+  border-radius: 2px;
+  background-color: #43ba87;
+  color: white !important;
+}
+
+.green-bg:hover {
+  color: #43ba87 !important;
+  background-color: #fff;
+}
+
+.purple {
+  color: #80489C;
+}
+
+.purple-hover:hover {
+  border-radius: 2px;
+  background-color: #80489C;
+  color: white;
+}
+
+.purple-hover:active {
+  background-color: #80489C;
+  color: white;
+}
+
+.purple-bg {
+  border-radius: 2px;
+  background-color: #80489C;
+  color: white !important;
+}
+
+.blue {
+  color: #2966B1;
+}
+
+.blue-hover:hover {
+  border-radius: 2px;
+  background-color: #2966B1;
+  color: white;
+}
+
+.blue-bg {
+  background-color: #2966B1;
+  color: white !important;
+}
+
+.blue-bg:hover {
+  color: #2966B1 !important;
+  background-color: #fff;
+}
+
+.grey {
+  color: #CCCCCB;
+}
+
+.grey-hover:hover {
+  border-radius: 2px;
+  background-color: #CCCCCB;
+  color: white;
+}
+
+.grey-bg {
+  background-color: #CCCCCB;
+  color: white !important;
+}
+
+.grey-bg:hover {
+  color: #CCCCCB !important;
+  background-color: #fff;
+}
