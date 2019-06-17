@@ -1,4 +1,7 @@
-/* ----- Global Styling ----- */
+/* =================================
+  Global Styling
+==================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +9,7 @@
 body {
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 300;
+  transition: background-color .5s ease;
 }
 
 p {
@@ -23,7 +27,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+  color: #000;
   text-decoration: none;
+}
+
+#cb-link {
+  color: #fff;
 }
 
 li {
@@ -35,6 +44,7 @@ li {
 /* =================================
   Layout
 ==================================== */
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -53,6 +63,7 @@ li {
   min-height: 50px;
   max-height: 75px;
   justify-content: space-between;
+  transition: background-color .5s ease;
 }
 
 .logo {
@@ -86,8 +97,10 @@ li {
   padding: 1rem;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   flex-direction: column;
   text-align: right;
+  transition: background-color .5s ease;
 }
 
 .menu-item {
@@ -123,27 +136,51 @@ li {
 
 .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
   height: auto;
-  max-width: 800px;
+  max-width: 100%;
 }
 
+
+/* =================================
+  Homepage
+==================================== */
+
 .contact-box {
+  box-sizing: border-box;
   display: flex;
   flex: 1;
+  margin: 0 auto 0 0;
   justify-content: space-between;
+  align-self: flex-start;
   flex-direction: column;
   border-radius: 5px;
+  max-width: 300px;
   padding: 1rem;
   color: #fff;
   background-color: #EF4343;
+  transition: background-color .5s ease;
 }
 
 .txt-box {
-  display: flex;
-  flex-direction: column;
-  flex: 5;
-  margin-left: 2rem;
+  margin: .5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    height: auto;
+    max-width: 800px;
+  }
+
+  .txt-box {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    margin-left: 2rem;
+  }
 }
 
 .sl-contact {
@@ -158,6 +195,58 @@ li {
   max-height: 25px;
   margin-right: 1rem;
 }
+
+/* =================================
+  Education Page
+==================================== */
+
+.button-row {
+  margin-top: 3rem;
+}
+
+.js-btn {
+  padding: .5rem;
+  background-color: #fff;
+  color: #23232A;
+  border-radius: 2px;
+  border: 2px solid #23232A;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#showUK {
+  color: #fff;
+  background-color: #23232A;
+}
+
+.js-btn:focus {
+  outline: none;
+}
+
+#cl {
+  display: none;
+}
+
+/* =================================
+  Education Page
+==================================== */
+
+#sidekick {
+  color: #fff;
+  background-color: #23232A;
+}
+
+#previous {
+  display: none;
+}
+
+#first {
+  display: none;
+}
+
+
 
 /* =================================
   Colors
@@ -263,6 +352,10 @@ li {
   background-color: #fff;
 }
 
+/* =================================
+  darkMode CSS
+==================================== */
+
 #sun-moon {
   position: fixed;
   z-index: 1;
@@ -319,4 +412,36 @@ body.night #sun-moon:after {
   color: #fff;
   border: 2px solid #23232A;
   box-shadow: 0 0 0 0 #23232A, 0 0 0 0 #23232A, 0 0 0 2px #23232A, 0 0 0 15px #fff;
+}
+
+body.dark{
+  color: #fff;
+  background-color: #23232A;
+}
+
+.nav.dark {
+  color: #fff;
+  background-color: #23232A;
+}
+
+h1.dark {
+  color: #fff !important;
+}
+
+p.dark {
+  color: #fff !important;
+}
+
+.menu-list.dark {
+  background-color: #23232A;
+  color: #fff;
+}
+
+.menu-item.dark {
+  color: #fff;
+}
+
+.contact-box.dark {
+  color: #fff;
+  background-color: #43ba87;
 }
