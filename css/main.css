@@ -201,11 +201,12 @@ li {
 ==================================== */
 
 .button-row {
-  margin-top: 3rem;
+
 }
 
 .js-btn {
   padding: .5rem;
+  margin-top:.5rem;
   background-color: #fff;
   color: #23232A;
   border-radius: 2px;
@@ -246,7 +247,26 @@ li {
   display: none;
 }
 
+/* =================================
+  Education Page
+==================================== */
 
+#lang {
+  color: #fff;
+  background-color: #23232A;
+}
+
+#tool-text {
+  display: none;
+}
+
+#aux-skills {
+  display: none;
+}
+
+#code-examples {
+  display: none;
+}
 
 /* =================================
   Colors
