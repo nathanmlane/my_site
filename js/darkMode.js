@@ -7,6 +7,7 @@ let toggleDarkMode = function() {
   $(".menu-list").toggleClass('dark');
   $(".menu-item").toggleClass('dark');
   $(".contact-box").toggleClass('dark');
+  $(".js-btn").toggleClass('dark');
 }
 
 $("#sun-moon").click(toggleDarkMode);

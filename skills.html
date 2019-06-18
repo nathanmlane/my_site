@@ -19,18 +19,30 @@
     <div class="nav">
 
       <div class="logo">
-        <a href="index.html"><h1>Nate Lane</h1></a>
-        <a href="index.html"><p>Developer</p></a>
+        <a href="index.html">
+          <h1>Nate Lane</h1>
+        </a>
+        <a href="index.html">
+          <p>Developer</p>
+        </a>
       </div>
 
       <div class="menu">
         <h5 id="menu-trigger" class="">[menu]</h5>
-        <h5 id="menu-close" class="">[&nbspmenu&nbsp]</h5>
+        <h5 id="menu-close" class="">[&nbsp&nbspmenu&nbsp&nbsp]</h5>
         <nav class="menu-list">
-          <a href="skills.html"><h6 class="menu-item" id="skills">Skills and Examples</h6></a>
-          <a href="work.html"><h6 class="menu-item" id="work">Work History</h6></a>
-          <a href="education.html"><h6 class="menu-item" id="school">Education</h6></a>
-          <a href="nate_lane_developer_resume.pdf" target="_blank"><h6 class="menu-item" id="resume">Resume</h6></a>
+          <a href="skills.html">
+            <h6 class="menu-item" id="skills">Skills and Examples</h6>
+          </a>
+          <a href="work.html">
+            <h6 class="menu-item" id="work">Work History</h6>
+          </a>
+          <a href="education.html">
+            <h6 class="menu-item" id="school">Education</h6>
+          </a>
+          <a href="nate_lane_developer_resume.pdf" target="_blank">
+            <h6 class="menu-item" id="resume">Resume</h6>
+          </a>
         </nav>
       </div>
 
@@ -40,19 +52,97 @@
       <div class="content" style="flex-direction: column;">
         <div id="lang-text" class="school-text">
           <h2>Languages</h2>
+          <div class="skill-columns">
+            <div class="ind-skill-col">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
+            </div>
+            <div class="ind-skill-col">
+              <p>React</p>
+              <p>Python</p>
+              <p>SQL</p>
+            </div>
+            <div class="ind-skill-col">
+              <p>PHP</p>
+              <p>Git</p>
+            </div>
+          </div>
         </div>
         <div id="tool-text" class="school-text">
-          <h2>Tools</h2>
+          <h2>Tools and Frameworks</h2>
+          <div class="skill-columns">
+            <div class="ind-skill-col">
+              <p>Github</p>
+              <p>Wordpress</p>
+              <p>Django</p>
+              <p>Docker</p>
+              <p>Bitbucket</p>
+            </div>
+            <div class="ind-skill-col">
+              <p>MAMP</p>
+              <p>Anaconda</p>
+              <p>Jupyter</p>
+              <p>Excel</p>
+              <p>AWS</p>
+            </div>
+            <div class="ind-skill-col">
+              <p>Illustrator</p>
+              <p>Photoshop</p>
+              <p>Sketch</p>
+              <p>Excel</p>
+              <p>Adobe XD</p>
+            </div>
+          </div>
         </div>
         <div id="aux-skills" class="school-text">
           <h2>Auxiliary</h2>
+          <div class="skill-columns">
+            <div class="ind-skill-col">
+              <p>Team Communication</p>
+              <p>Project Planning</p>
+              <p>Task Delegation</p>
+              <p>Client Communication</p>
+              <p>Quality Control</p>
+            </div>
+            <div class="ind-skill-col">
+              <p>Time Management</p>
+              <p>Mockups</p>
+              <p>Prototypes</p>
+              <p>SEO</p>
+              <p>User Research</p>
+            </div>
+            <div class="ind-skill-col">
+              <p>Concepting</p>
+              <p>Sitemapping</p>
+              <p>QA/Testing</p>
+              <p>Data Analysis</p>
+              <p>Agile Development</p>
+            </div>
+          </div>
         </div>
         <div id="code-examples" class="school-text">
           <h2>Examples</h2>
+          <div class="skill-columns">
+            <div class="ind-skill-col">
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+            </div>
+            <div class="ind-skill-col">
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+            </div>
+            <div class="ind-skill-col">
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+              <a href="https://github.com/nathanmlane"><p>Github<span class="example-cta">Check it out&nbsp&nbsp---></span></p></a>
+            </div>
+          </div>
         </div>
         <div class="button-row">
-          <button class="js-btn" id="lang">Languages/Frameworks</button>
-          <button class="js-btn" id="tools">Tools</button>
+          <button class="js-btn" id="lang">Languages</button>
+          <button class="js-btn" id="tools">Tools / Frameworks</button>
           <button class="js-btn" id="soft">Auxiliary Skills</button>
           <button class="js-btn" id="examples">Examples</button>
         </div>
@@ -65,6 +155,7 @@
   <script type="text/javascript" src="js/darkMode.js"></script>
   <script type="text/javascript" src="js/menu.js"></script>
   <script type="text/javascript" src="js/skillButton.js"></script>
+  <script type="text/javascript" src="js/skillBar.js"></script>
 </body>
 
 </html>
