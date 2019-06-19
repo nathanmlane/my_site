@@ -9,6 +9,8 @@ const ranges = player.querySelectorAll('.player__slider');
 const fullscreen = player.querySelector('.fullscreen__button');
 const notFullscreen = player.querySelector('.not__fullscreen');
 const heading = document.querySelector('.heading');
+const nav = document.querySelector('.nav');
+const backBtn = document.getElementById('back');
 
 /* Build Functions*/
 function togglePlay() {
@@ -49,6 +51,8 @@ function makeFullscreen() {
     player.style.maxWidth = `none`;
     player.style.borderRadius = `0px`;
     heading.style.display = `none`;
+    nav.style.display = `none`;
+    backBtn.style.display = `none`;
     fullscreen.style.display = `none`;
     notFullscreen.style.display = `inline`;
     body.style.backgroundColor = `#23232A`;
@@ -60,6 +64,8 @@ function hideFullscreen() {
     player.style.maxWidth = `750px`;
     player.style.borderRadius = `5px`;
     heading.style.display = `flex`;
+    nav.style.display = `flex`;
+    backBtn.style.display = `flex`;
     fullscreen.style.display = `inline`;
     notFullscreen.style.display = `none`;
 }

@@ -317,6 +317,24 @@ li {
   margin: 0 auto;
   padding: 5px 0;
 }
+
+.back-btn {
+  padding: .5rem;
+  background-color: #fff;
+  color: #23232A;
+  border-radius: 2px;
+  border: 2px solid #23232A;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color .5s ease;
+}
+
+.back-btn:hover {
+  background-color: #23232A;
+  color: #fff;
+}
 /* =================================
   Colors
 ==================================== */
