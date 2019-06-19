@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --base: #EF4343;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  text-align: center;
+  background: #fff;
+  color: #363636;
+  font-family: 'Fjalla One', monospace;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+img {
+  width: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: var(--base);
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
