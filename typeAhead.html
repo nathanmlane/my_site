@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nate Lane | Developer</title>
+  <link rel="icon" type="image/png" href="images/codeExamples/typeAhead.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
+  <!-- <link type="text/css" rel="stylesheet" href="css/normalize.css"> !-->
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="css/typeAhead.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper" style="width: calc(100vw - 2rem); flex-direction: column !important;">
+
+    <div class="nav">
+
+      <div class="logo">
+        <a href="index.html">
+          <h1>Nate Lane</h1>
+        </a>
+        <a href="index.html">
+          <p>Developer</p>
+        </a>
+      </div>
+
+      <div class="menu">
+        <h5 id="menu-trigger" class="">[menu]</h5>
+        <h5 id="menu-close" class="">[&nbspmenu&nbsp]</h5>
+        <nav class="menu-list">
+          <a href="skills.html">
+            <h6 class="menu-item" id="skills">Skills and Examples</h6>
+          </a>
+          <a href="work.html">
+            <h6 class="menu-item" id="work">Work History</h6>
+          </a>
+          <a href="education.html">
+            <h6 class="menu-item" id="school">Education</h6>
+          </a>
+          <a href="nate_lane_developer_resume.pdf" target="_blank">
+            <h6 class="menu-item" id="resume">Resume</h6>
+          </a>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="container" style="flex-direction: column;">
+      <form class="search-form">
+        <input type="text" class="search" placeholder="City or State">
+        <ul class="suggestions">
+          <li>Filter for a city</li>
+          <li>or a state</li>
+        </ul>
+      </form>
+
+      <div id="back" style="display: flex; margin-top: 1rem;">
+        <a href="skills.html" class="back-btn">Back To Examples</a>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/typeAhead.js"></script>
+</body>
+
+</html>
