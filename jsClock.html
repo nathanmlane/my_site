@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nate Lane | Developer</title>
+  <link rel="icon" type="image/png" href="images/codeExamples/clock.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet">
+  <!-- <link type="text/css" rel="stylesheet" href="css/normalize.css"> !-->
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper" style="width: calc(100vw - 2rem); flex-direction: column !important;">
+
+    <div class="nav">
+
+      <div class="logo">
+        <a href="index.html">
+          <h1>Nate Lane</h1>
+        </a>
+        <a href="index.html">
+          <p>Developer</p>
+        </a>
+      </div>
+
+      <div class="menu">
+        <h5 id="menu-trigger" class="">[menu]</h5>
+        <h5 id="menu-close" class="">[&nbspmenu&nbsp]</h5>
+        <nav class="menu-list">
+          <a href="skills.html">
+            <h6 class="menu-item" id="skills">Skills and Examples</h6>
+          </a>
+          <a href="work.html">
+            <h6 class="menu-item" id="work">Work History</h6>
+          </a>
+          <a href="education.html">
+            <h6 class="menu-item" id="school">Education</h6>
+          </a>
+          <a href="nate_lane_developer_resume.pdf" target="_blank">
+            <h6 class="menu-item" id="resume">Resume</h6>
+          </a>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+
+    <div id="back" style="display: flex; margin-top: 1rem; position: absolute; bottom: 1.5rem; left: 1.5rem;">
+      <a href="skills.html" class="back-btn">Back To Examples</a>
+    </div>
+
+  </div>
+  </div>
+  <style>
+
+    .clock {
+      width: calc(100vw - 17rem);
+      height: calc(100vw - 17rem);
+      max-width: 400px;
+      max-height: 400px;
+      border: .5rem solid #000;
+      border-radius: 50%;
+      margin: 50px auto;
+      position: relative;
+      padding: 2rem;
+    }
+
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px);
+      /* account for the height of the clock hands */
+    }
+
+    .hand {
+      width: 50%;
+      height: 6px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      transform: rotate(90deg);
+      transform-origin: 100%;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+    .hour-hand {
+      width: 30%;
+      height: 6px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+    }
+
+    .second-hand {
+      width: 50%;
+      height: 3px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      background: black;
+      position: absolute;
+      top: 50%;
+    }
+  </style>
+
+  <script>
+
+    const secondHand = document.querySelector('.second-hand');
+    const minuteHand = document.querySelector('.min-hand');
+    const hourHand = document.querySelector('.hour-hand');
+
+
+    function setDate() {
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const secondsDegrees = (((seconds / 60) * 360) + 90);
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+      const minutes = now.getMinutes();
+      const minutesDegrees = (((minutes / 60) * 360) + 90);
+      minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+      const hours = now.getHours();
+      const hoursDegrees = (((hours / 12) * 360) + 90);
+      hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+      console.log(seconds);
+    }
+
+    setInterval(setDate, 1000);
+
+  </script>
+  <script type="text/javascript" src="js/menu.js"></script>
+</body>
+
+</html>

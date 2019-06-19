@@ -268,7 +268,7 @@ li {
   Skills Page
 ==================================== */
 
-#lang {
+#examples {
   color: #fff;
   background-color: #23232A;
 }
@@ -281,7 +281,7 @@ li {
   display: none;
 }
 
-#code-examples {
+#lang-text {
   display: none;
 }
 
@@ -329,6 +329,8 @@ li {
   letter-spacing: 1px;
   cursor: pointer;
   transition: color .5s ease;
+  bottom: 1.5rem;
+  left: 1.5rem;
 }
 
 .back-btn:hover {
